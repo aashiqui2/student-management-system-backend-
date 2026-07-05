@@ -75,7 +75,7 @@ class ExcelServiceTest {
         );
 
         TestMarksService marksService = new TestMarksService();
-        ExcelService excelService = new ExcelService(studentRepository, assessmentRepository, marksService, studentService, markRepository);
+        ExcelService excelService = new ExcelService(studentRepository, assessmentRepository, marksService, studentService, markRepository, null, null);
 
         MultipartFile file = new MockMultipartFile(
                 "file",
@@ -131,7 +131,7 @@ class ExcelServiceTest {
                 (proxy, method, args) -> defaultValue(method.getReturnType())
         );
 
-        ExcelService excelService = new ExcelService(studentRepository, assessmentRepository, marksService, studentService, markRepository);
+        ExcelService excelService = new ExcelService(studentRepository, assessmentRepository, marksService, studentService, markRepository, null, null);
 
         MultipartFile file = new MockMultipartFile(
                 "file",
@@ -212,7 +212,7 @@ class ExcelServiceTest {
 
     private static class TestStudentService extends com.example.sms.service.StudentService {
         private TestStudentService() {
-            super(null, null, null, null, null);
+            super(null, null, null, null, null, null);
         }
 
         @Override
