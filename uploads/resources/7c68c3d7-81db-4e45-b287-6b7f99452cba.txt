@@ -1,5 +1,0 @@
-1.Reverse Prefix of word 
-  Link -> https://leetcode.com/problems/reverse-prefix-of-word/
-
-2.Find the Duplicate Number
-  Link -> https://leetcode.com/problems/find-the-duplicate-number/
